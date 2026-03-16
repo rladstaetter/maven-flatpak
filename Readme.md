@@ -100,17 +100,17 @@ modules:
     sources:
       - type: git
         url: https://github.com/user/repo.git
-        branch: main
+        revision: ...
         
       # JavaFX JMODs (Architecture Specific)
       - type: archive
         url: https://download2.gluonhq.com/openjfx/25/openjfx-25_linux-aarch64_bin-jmods.zip
-        sha256: <HASH_HERE>
+        sha256: 9ad4ca7b769ca4ee6419f1e99143dd6ff812f8be4fddb46a7d7cacbeea148af4
         dest: "env/target/javafx-jmods-25"
         only-arches: [aarch64]
       - type: archive
         url: https://download2.gluonhq.com/openjfx/25/openjfx-25_linux-x64_bin-jmods.zip
-        sha256: <HASH_HERE>
+        sha256: 96e520f48610d8ffb94ca30face1f11ffe8a977ddc1c4ff80b1a9e9f048bd94e
         dest: "env/target/javafx-jmods-25"
         only-arches: [x86_64]
 
