@@ -2,7 +2,7 @@
   <configuration default="false" name="CameraApp MavenToFlatpak" type="Application" factoryName="Application">
     <option name="MAIN_CLASS_NAME" value="net.ladstatt.apps.MavenToFlatpak" />
     <module name="maven-flatpak" />
-    <option name="PROGRAM_PARAMETERS" value="$PROJECT_DIR$/../CameraApp/temp-repo/ $PROJECT_DIR$/../CameraApp-flatpak/maven-dependencies-aarch64.yml aarch64" />
+    <option name="PROGRAM_PARAMETERS" value="../CameraApp/temp-repo/ ../CameraApp-flatpak/maven-dependencies-aarch64.yml aarch64" />
     <extension name="coverage">
       <pattern>
         <option name="PATTERN" value="net.ladstatt.apps.*" />
