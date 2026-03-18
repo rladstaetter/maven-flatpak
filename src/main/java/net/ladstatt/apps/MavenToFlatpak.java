@@ -23,7 +23,7 @@ public class MavenToFlatpak {
 
     private static final String MAVEN_CENTRAL = "https://repo.maven.apache.org/maven2/";
 
-    public static void main(String[] args) {
+     static void main(String[] args) {
         if (args.length < 3) {
             System.out.println("Usage: java MavenToFlatpak <m2_dir> <output_file> <arch>");
             System.out.println("Example: java MavenToFlatpak ./temp-repo deps.json aarch64");
@@ -61,6 +61,7 @@ public class MavenToFlatpak {
                 filename.endsWith(".sha1") ||
                 filename.endsWith(".md5") ||
                 filename.startsWith(".") ||
+                pathString.contains("/.cache/") ||
                 pathString.contains("/.meta/") ||
                 filename.equals("_remote.repositories") ||
                 filename.equals("_maven.repositories") ||
