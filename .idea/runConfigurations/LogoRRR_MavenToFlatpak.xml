@@ -1,0 +1,16 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="LogoRRR MavenToFlatpak" type="Application" factoryName="Application">
+    <option name="MAIN_CLASS_NAME" value="net.ladstatt.apps.MavenToFlatpak" />
+    <module name="maven-flatpak" />
+    <option name="PROGRAM_PARAMETERS" value="$USER_HOME$/Documents/LogoRRR/temp-repo/ $USER_HOME$/Documents/LogoRRR-flatpak/maven-dependencies-aarch64.yml aarch64" />
+    <extension name="coverage">
+      <pattern>
+        <option name="PATTERN" value="net.ladstatt.apps.*" />
+        <option name="ENABLED" value="true" />
+      </pattern>
+    </extension>
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
